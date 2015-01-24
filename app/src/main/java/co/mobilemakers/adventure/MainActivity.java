@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import java.util.Random;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -26,7 +27,16 @@ public class MainActivity extends ActionBarActivity {
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,AlleyFragmentActivity.class);
+                int randomInt =0;
+                Intent intent;
+                Random randomGenerator = new Random();
+                for (int idx = 1; idx <= 10; ++idx){
+                    randomInt = randomGenerator.nextInt(100);
+                }
+                if((randomInt%2)==0)
+                   intent = new Intent(MainActivity.this,AlleyFragmentActivity.class);
+                else
+                    intent = new Intent(MainActivity.this,RoomFragmentActivity.class);
                 startActivity(intent);
              }
         });
