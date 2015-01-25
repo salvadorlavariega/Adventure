@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,12 +18,20 @@
         </activity>
 
         <activity
-            android:name=".AlleyFragmentActivity"
+            android:name=".activities.AlleyFragmentActivity"
             android:label="Alley" />
 
         <activity
-            android:name=".RoomFragmentActivity"
+            android:name=".activities.RoomFragmentActivity"
             android:label="Room" />
+
+        <activity
+            android:name=".activities.LossingFragmentActivity"
+            android:label="Losing" />
+
+        <activity
+            android:name=".activities.WinningFragmentActivity"
+            android:label="Winning" />
     </application>
 
 </manifest>

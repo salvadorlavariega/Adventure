@@ -4,40 +4,75 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
-    <TextView
-        android:layout_width="143dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/text_view_alley_screen_description"
-        android:id="@+id/text_view_alley_screen_description"
-        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-    <TextView
-        android:layout_width="259dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/text_view_message"
-        android:id="@+id/text_view_message"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.12" />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_view_alley_screen_description"
+            android:id="@+id/text_view_alley_screen_description"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.02"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:background="#ffff9b4d"
+            android:textColor="#ffffffff" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_go_left"
-        android:id="@+id/button_go_left" />
+        <TextView
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_view_message"
+            android:id="@+id/text_view_message"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.03"
+            android:gravity="center" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_continue"
-        android:id="@+id/button_continue"
-        android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="324dp"
+            android:layout_weight="0.06"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:layout_marginLeft="12dp">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_go_right"
-        android:id="@+id/button_go_right"
-        android:layout_gravity="center_horizontal" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_go_left"
+                android:id="@+id/button_go_left"
+                android:layout_gravity="top"
+                android:background="#fffffa42"
+                android:padding="12dp"
+                android:layout_marginRight="12dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_continue"
+                android:id="@+id/button_continue"
+                android:layout_gravity="center_horizontal"
+                android:background="#ff29ff3d"
+                android:padding="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_go_right"
+                android:id="@+id/button_go_right"
+                android:layout_gravity="center_horizontal"
+                android:background="#ff2e6fff"
+                android:padding="12dp"
+                android:layout_marginLeft="12dp" />
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

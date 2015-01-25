@@ -1,9 +1,9 @@
-package co.mobilemakers.adventure;
+package co.mobilemakers.adventure.activities;
 
 
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,9 +11,12 @@ import android.view.View;
 import android.widget.Button;
 import java.util.Random;
 
+import co.mobilemakers.adventure.R;
+
 
 public class MainActivity extends ActionBarActivity {
 
+    private final static int MAX_RANDOM=10;
     Button buttonStart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +33,9 @@ public class MainActivity extends ActionBarActivity {
                 int randomInt =0;
                 Intent intent;
                 Random randomGenerator = new Random();
-                for (int idx = 1; idx <= 10; ++idx){
-                    randomInt = randomGenerator.nextInt(100);
-                }
+
+                    randomInt = randomGenerator.nextInt(MAX_RANDOM);
+
                 if((randomInt%2)==0)
                    intent = new Intent(MainActivity.this,AlleyFragmentActivity.class);
                 else

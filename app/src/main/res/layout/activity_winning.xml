@@ -4,12 +4,11 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+
     <fragment
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:name="co.mobilemakers.adventure.fragments.AlleyFragment"
-        android:id="@+id/id_alley_fragment"
+        android:layout_height="fill_parent"
+        android:name="co.mobilemakers.adventure.fragments.WinningFragment"
+        android:id="@+id/id_winning_fragment"
         android:layout_gravity="center_horizontal" />
-
-
 </LinearLayout>

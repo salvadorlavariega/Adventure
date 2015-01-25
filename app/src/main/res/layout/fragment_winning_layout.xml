@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_view_winning_screen"
+        android:id="@+id/text_view_winning_screen"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.22"
+        android:layout_marginTop="7dp"
+        android:background="#ffffd724"
+        android:textSize="50dp"
+        android:textColor="#ff2d9c44"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_view_lose"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.22"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="16dp"
+        android:background="#ff2e80ff" />
+
+    <Button
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_restart"
+        android:id="@+id/button_restart"
+        android:layout_weight="0.22"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

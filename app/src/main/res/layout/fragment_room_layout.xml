@@ -1,13 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/parentIdNew">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="278dp"
+        android:layout_height="165dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/text_view_room_description"
         android:id="@+id/text_view_room_description"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:background="#ff4479ff"
+        android:textColor="#ffffffff" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_weight="0.46"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button_door_one"
+            android:id="@+id/button_door_one"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#ff4c3412"
+            android:layout_weight="0.11"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button_door_two"
+            android:id="@+id/button_door_two"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="12dp"
+            android:background="#ff4c3412"
+            android:layout_weight="0.09"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
 </LinearLayout>
