@@ -1,49 +1,31 @@
 package co.mobilemakers.adventure.activities;
 
 
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
-import java.util.Random;
 
 import co.mobilemakers.adventure.R;
+import co.mobilemakers.adventure.fragments.StartFragment;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends  Activity {
 
-    private final static int MAX_RANDOM=10;
     Button buttonStart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        prepareButtonStart();
+
+        getFragmentManager().beginTransaction().replace(
+                R.id.startFrameLayout, new StartFragment()).commit();
+
     }
 
-    private void prepareButtonStart() {
-        buttonStart = (Button)findViewById(R.id.button_start);
-        buttonStart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int randomInt =0;
-                Intent intent;
-                Random randomGenerator = new Random();
 
-                    randomInt = randomGenerator.nextInt(MAX_RANDOM);
-
-                if((randomInt%2)==0)
-                   intent = new Intent(MainActivity.this,AlleyFragmentActivity.class);
-                else
-                    intent = new Intent(MainActivity.this,RoomFragmentActivity.class);
-                startActivity(intent);
-             }
-        });
-    }
 
 
     @Override

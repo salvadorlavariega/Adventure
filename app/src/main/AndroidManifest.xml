@@ -17,21 +17,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".activities.AlleyFragmentActivity"
-            android:label="Alley" />
-
-        <activity
-            android:name=".activities.RoomFragmentActivity"
-            android:label="Room" />
-
-        <activity
-            android:name=".activities.LossingFragmentActivity"
-            android:label="Losing" />
-
-        <activity
-            android:name=".activities.WinningFragmentActivity"
-            android:label="Winning" />
     </application>
 
 </manifest>
