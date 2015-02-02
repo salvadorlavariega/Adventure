@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_category_customization">
+
+
+        <ListPreference
+            android:key="difficulty_level"
+            android:title="@string/pref_difficulty_title"
+            android:summary="@string/pref_difficulty_summary"
+            android:entries="@array/difficulty_options"
+            android:entryValues="@array/difficulty_options"/>
+
+        <EditTextPreference
+        android:key="username_preference"
+        android:title="@string/pref_username_title"
+        android:summary="@string/pref_username_summary" />
+
+
+        <EditTextPreference
+            android:key="lose_msg_preference"
+            android:title="@string/pref_lose_msg_title"
+            android:summary="@string/pref_lose_msg_summary" />
+
+        <EditTextPreference
+            android:key="win_msg_preference"
+            android:title="@string/pref_win_msg_title"
+            android:summary="@string/pref_win_msg_summary" />
+
+
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

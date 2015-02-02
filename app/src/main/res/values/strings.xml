@@ -22,5 +22,20 @@
     <string name="button_restart">Restart</string>
     <string name="text_view_lose">You\'ve fallen into the pit of despair</string>
     <string name="button_restart_2">Restart</string>
-
+    <string name="set_your_name">Set your name</string>
+    <string name="personalize_your_msg">Personalize the loser mesage</string>
+    <string name="action_bar_title">Action Bar title</string>
+    <string name="pref_username_summary">Set your name here</string>
+    <string name="pref_username_title">User name</string>
+    <string name="pref_category_customization">pref category custom</string>
+    <string name="default_username">default username</string>
+    <string name="default_level">easy</string>
+    <string name="user_intro">user intro</string>
+    <string name="title_activity_settings">Act Settings</string>
+    <string name="pref_difficulty_title">Difficulty Level</string>
+    <string name="pref_difficulty_summary">Choose the difficulty level</string>
+    <string name="pref_win_msg_title">Winner message</string>
+    <string name="pref_win_msg_summary">personalize the winner message</string>
+    <string name="pref_lose_msg_title">Loser message</string>
+    <string name="pref_lose_msg_summary">personalize the loser message</string>
 </resources>

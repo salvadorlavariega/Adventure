@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/text_view_lose"
-        android:id="@+id/textView"
+        android:id="@+id/text_view_msg_winner"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.22"
         android:gravity="center"
